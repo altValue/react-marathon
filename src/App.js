@@ -10,7 +10,7 @@ const App = () => {
     <>
       <Header
         title='Хмели сумели'
-        descr='И ты всё сможешь!'
+        descr='И ты сможешь!'
       />
       <Layout
         title='Первый экран'
