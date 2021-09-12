@@ -1,11 +1,24 @@
 import l from './style.module.css';
 
-const Layout = ({ title, descr, urlBg, colorBg }) => {
-  const styleRoot = urlBg ? {background: `url(${urlBg})` } : { background: `${colorBg}` };
+const Layout = ({ id, title, urlBg, colorBg, children }) => {
+  // const sectionStyle = urlBg ? {background: `url(${urlBg})` } : { background: `${colorBg}` };
+  const sectionStyle = {}
+
+  if (urlBg) {
+    sectionStyle.backgroundImage = `url(${urlBg})`
+  }
+  if (colorBg) {
+    sectionStyle.backgroundColor = colorBg
+  }
+  // console.log('####: props', props);
 
   return (
     <>
-      <section className={l.root} style={styleRoot}>
+      <section 
+        id={id}
+        className={l.root}
+        style={sectionStyle}
+      >
         <div className={l.wrapper}>
             <article>
                 <div className={l.title}>
@@ -13,7 +26,7 @@ const Layout = ({ title, descr, urlBg, colorBg }) => {
                     <span className={l.separator}></span>
                 </div>
                 <div className={`${l.desc} ${l.full}`}>
-                    <p>{descr}</p>
+                    {children}
                 </div>
             </article>
         </div>
