@@ -2,13 +2,15 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.logoApp {
   pointer-events: none;
+  display: block;
+  width: 43vw;
+  margin: 0 auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logoApp {
     animation: App-logo-spin infinite 20s linear;
   }
 }
