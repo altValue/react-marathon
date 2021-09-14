@@ -5,8 +5,7 @@ import pc from './style.module.css';
 import cardBackSide from './assets/card-back-side.jpg';
 
 const PokemonCard = ({ name, img, id, type, values }) => {
-  const [isActive, setActive] = useState(false);
-
+  const [isActive, setActive] = useState(false)
   const toggleCard = () => {setActive(!isActive)}
 
   return (
@@ -41,8 +40,7 @@ const PokemonCard = ({ name, img, id, type, values }) => {
               <img src={cardBackSide} alt="Сard Backed" />
             </div>
           </div>
-
-          </div>
+        </div>
       </div>
     </>
   );

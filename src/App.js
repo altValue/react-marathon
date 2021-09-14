@@ -2,12 +2,8 @@ import Header from './components/Header';
 import Layout from './components/Layout';
 import Footer from './components/Footer';
 import PokemonCard from './components/PokemonCard';
-
 import s from './App.module.css';
-
-import bck1 from './assets/bg3.jpg';
-import bck3 from './assets/bg1.jpg';
-import logoImg from './components/PokemonCard/assets/logo.png'
+import * as images from './assets/index.js';
 
 const POKEMONS = [
   {
@@ -154,7 +150,7 @@ const App = () => {
       <Layout
         id='rules'
         title='Rules'
-        urlBg={ bck1 }
+        urlBg={ images.Bck3 }
       >
         <p>In the game two players face off against one another, one side playing as "blue", the other as "red" on a 3x3 grid.</p>
         <p>Each player has five cards in a hand and the aim is to capture the opponent's cards by turning them into the player' own color of red or blue.</p>
@@ -183,14 +179,14 @@ const App = () => {
       <Layout
         id='about'
         title='About'
-        urlBg={ bck3 }
+        urlBg={ images.Bck1 }
       >
         <p>In the game two players face off against one another, one side playing as "blue", the other as "red" on a 3x3 grid.
         Each player has five cards in a hand and the aim is to capture the opponent's cards by turning them into the player's own color of red or blue.
 
         To win, a majority of the total ten cards played (including the one card that is not placed on the board) must be of the player's card color. To do this, the player must capture cards by placing a card adjacent to an opponent's card whereupon the 'ranks' of the sides where the two cards touch will be compared. If the rank of the opponent's card is higher than the player's card, the player's card will be captured and turned into the opponent's color. If the player's rank is higher, the opponent's card will be captured and changed into the player's color instead.
         </p>
-        <img src={logoImg} alt="logo" className={s.logoApp} />
+        <img src={images.Logo} alt="logo" className={s['App-logo']} />
       </Layout>
       <Footer />
     </>
