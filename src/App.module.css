@@ -3,8 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+  display: block;
+  width: 43vw;
+  margin: 0 auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
