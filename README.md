@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# How it looks like
+
+You can see what this code does at https://pedantic-beaver-c2d314.netlify.app
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
